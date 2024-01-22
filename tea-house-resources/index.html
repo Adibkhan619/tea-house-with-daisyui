@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House with DaisyUI</title>
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'gradient-start':'#FF8938',
+                        'gradient-end' :'#F00'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ed818369f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="manrope">
+    <header class="container mx-auto mt-20">
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row">
+
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6 text-[#777]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+                        Taste Buds.</p>
+                    <button class="btn btn-primary font-bold text-xl">Explore More</button>
+                </div>
+                <div>
+                    <img src="/tea-house-resources/images/banner.png" class="max-w-sm" />
+                    <!--rating badge -->
+                    <div class="-mt-16 flex bg-white gap-3 items-center drop-shadow-lg py-5 px-7 rounded-lg w-60">
+                        <i class="text-3xl fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <div>
+                            <h3 class="font-extrabold text-3xl ">5.00</h3>
+                            <p class="text-[#777] font-semibold">trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <section class="lg:my-10 my-10 lg:mt-40">
+            <h1 class="text-4xl font-extrabold text-center">Our Featured Products</h1>
+            <p class="mt-5 text-base font-medium text-[#777] text-center lg:max-w-3xl mx-auto">There are many variations
+                of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even slightly believable. </p>
+        </section>
+        <section
+            class="grid lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 grid-rows-4 gap-6 mb-40 justify-center">
+            <div class="card w-[267px] bg-base-200 p-7 shadow-xl">
+                <figure><img src="images/tea-1.png" alt="Shoes" /></figure>
+                <div class="card-body  text-center pb-0">
+                    <h2 class="text-2xl font-extrabold">Milk Tea</h2>
+                    <p class="text-base font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+            <div class="card w-[267px] bg-base-200 p-7 shadow-xl">
+                <figure><img src="images/tea-2.png" alt="Shoes" /></figure>
+                <div class="card-body text-center pb-0">
+                    <h2 class="text-2xl font-extrabold">Milk Tea</h2>
+                    <p class="text-base font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+            <div class="card w-[267px] bg-base-200 p-7 shadow-xl">
+                <figure><img src="images/tea-3.png" alt="Shoes" /></figure>
+                <div class="card-body text-center pb-0">
+                    <h2 class="text-2xl font-extrabold">Milk Tea</h2>
+                    <p class="text-base font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+            <div class="card w-[267px] bg-base-200 p-7 shadow-xl">
+                <figure><img src="images/tea-4.png" alt="Shoes" /></figure>
+                <div class="card-body text-center pb-0">
+                    <h2 class="text-2xl font-extrabold">Milk Tea</h2>
+                    <p class="text-base font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+        </section>
+        <!-- great tea section -->
+
+        <section class="my-24 flex flex-col lg:flex-row gap-12">
+
+            <div class="grid gap-8  md:grid-cols-2 grid-cols-1 flex-1">
+                <div class="bg-gradient-to-r from-[#F00] to-[#FF8938] rounded-lg h-36 opacity-10"></div>
+                <div class="row-span-2 rounded-lg bg-[#E6A6231A]  px-8 py-12 flex justify-center">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2 rounded-lg bg-[#574C391A]  px-8 py-12 flex justify-center">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="rounded-lg bg-gradient-to-r from-[#0000002f] to-[#FFFFFF] h-36 opacity-80"></div>
+            </div>
+            <div class="flex-1 space-y-7 mx-5">
+                <h1 class="text-4xl font-extrabold text-[#1C1C1C]">Great Tea, Freshly <br>Presented</h1>
+                <p class="text-base font-medium mt-5 text-[#777]">The meaning of gong cha is chanese is to provide the
+                    best tea to
+                    emperor from all possessions . It represents the highest quality and self expectation. Establishing
+                    in 2006, Gong cha had been deeply appreciated by its custoers because of good words of mouth and
+                    unique customized service orginated from Taiwan.</p>
+
+                <h4 class="font-extrabold text-xl mt-10">Unique Taste</h4>
+                <p class="text-base font-medium text-[#777]">A Unique and different style from other teapots gives a
+                    luxurious and
+                    minimalist impression</p>
+                <h4 class="font-extrabold text-xl mt-5">Premium Quality</h4>
+                <p class="text-base font-medium text-[#777]">Premium Quality that makes tea more elegant and more
+                    durable when you
+                    use it.</p>
+            </div>
+        </section>
+
+        <!-- super section -->
+        <div
+            class="my-24 px-16 py-24 bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-3xl flex flex-col lg:flex-row gap-12">
+            <div class="flex items-center lg:pr-60 ">
+                <div class="space-y-8">
+                    <h1 class="font-extrabold text-5xl text-[#F4F4F4]">
+                        Meet Our Super <br> Clients</h1>
+                    <p class="text-base font-medium text-[#F4F4F4]">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable. </p>
+                    <button class="bg-white text-2xl btn font-bold text-[gradient-to-r from-indigo-500 ...]">Show
+                        All</button>
+
+                </div>
+            </div>
+            <!-- review container -->
+            <div class="relative">
+                <!-- next review -->
+                <div class="bg-white opacity-40 space-y-3 rounded-lg p-8 relative mb-16 z-10">
+                    <img class="absolute border-4 border-white bg-white rounded-full -left-8 -top-5"
+                        src="images/client.png" alt="">
+
+                    <p class="font-normal text-base text-[#777]">We are providing the best and suitable home insurance
+                        services for the people who are interested to treatment</p>
+                    <h4 class="text-base font-bold">Ilham Yuda</h4>
+                    <p class="text-base font-medium">Businessman</p>
+                    <div class="flex justify-end">
+                        <img class="" src="images/circles.png" alt="">
+                    </div>
+                </div>
+                <!-- current review -->
+                <div class="bg-white bottom-36 lg:-left-40 lg:w-[430px] space-y-3 absolute rounded-lg p-8 z-20">
+                    <img class="absolute  border-4 border-white bg-white rounded-full -left-8 -top-5"
+                        src="images/client.png" alt="">
+
+                    <p class="font-normal text-base text-[#777]">We are providing the best and suitable home insurance
+                        services for the people who are interested to treatment</p>
+                    <h4 class="text-base font-bold">Ilham Yuda</h4>
+                    <p class="text-base font-medium">Businessman</p>
+                    <div class="flex justify-end">
+                        <img class="" src="images/circles.png" alt="">
+                    </div>
+                </div>
+                <!-- previous review -->
+                <div class="bg-white opacity-40 space-y-3 rounded-lg p-8 relative z-10">
+                    <img class="absolute border-4 border-white bg-white rounded-full -left-8 -top-5"
+                        src="images/client.png" alt="">
+
+                    <p class="font-normal text-base text-[#777]">We are providing the best and suitable home insurance
+                        services for the people who are interested to treatment</p>
+                    <h4 class="text-base font-bold">Ilham Yuda</h4>
+                    <p class="text-base font-medium">Businessman</p>
+                    <div class="flex justify-end">
+                        <img class="" src="images/circles.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="px-52 py-32 bg-[#FF00001A] ">
+        <div class="px-60"></div>
+        <div >
+
+            <div class="flex flex-row justify-between">
+                <aside>
+                    <img src="images/cup.png" alt="">
+                </aside>
+                <div class="flex gap-10 items-center">
+                    <h1 class="text-xl font-medium text-[#494949]">Ready to get strated?</h1>
+                    <button class="btn btn-warning bg-gradient-to-r from-[#FF8938] to-[#F00] text-white">Get Started</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer pt-24 gap-40" >
+
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="text-2xl font-semibold text-black ">Subscribe to Our <br>Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join flex flex-col">
+                        <div class="flex"> <input type="text" placeholder="Email address"
+                                class=" bg-transparent border-b-2 border-[#494949] mr-5" />
+                            <button class="btn rounded-full bg-orange-500"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                        </div>
+
+
+                        <nav>
+                            <div class=" mt-5 flex gap-4">
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                        </path>
+                                    </svg></a>
+                                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="fill-current">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </nav>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="text-center pt-14">
+            <p>© 2027 UIDesign.to - All rights reserved.</p>
+        </aside>
+    </footer>
+
+</body>
+
+</html>
